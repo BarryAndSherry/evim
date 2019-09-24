@@ -28,6 +28,6 @@
   (setq org-bullets-bullet-list (quote ( "☀"  "⊛" "☉" "⚫" "⚪"  ))))
 (setq org-ellipsis " ⤵");; ⤵ ≫
 
-(add-to-list 'org-file-apps '("pdf" . "evince %s"))
+(add-to-list 'org-file-apps '("pdf" . "okular %s"))
 
 (provide 'init-orgmode)
