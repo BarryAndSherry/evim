@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name:cpp-class-def 
+# key:classdef 
+# --
+class $0
+{
+$1
+};

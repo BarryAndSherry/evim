@@ -61,8 +61,8 @@
   (define-key evil-normal-state-map (kbd "SPC 1") 'winum-select-window-1)
   (define-key evil-normal-state-map (kbd "SPC 2") 'winum-select-window-2)
   (define-key evil-normal-state-map (kbd "SPC 3") 'winum-select-window-3)
-  (define-key evil-normal-state-map (kbd "SPC 2") 'winum-select-window-4)
-  (define-key evil-normal-state-map (kbd "SPC 2") 'winum-select-window-5)
+  (define-key evil-normal-state-map (kbd "SPC 4") 'winum-select-window-4)
+  (define-key evil-normal-state-map (kbd "SPC 5") 'winum-select-window-5)
 
   ;; Buffer things
   (define-key evil-normal-state-map (kbd "SPC b") 'ivy-switch-buffer)

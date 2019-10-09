@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name:import-as 
+# key:ias 
+# --
+import $1 as $2
