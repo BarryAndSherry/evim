@@ -78,7 +78,7 @@
  '(imenu-list-focus-after-activation t)
  '(package-selected-packages
    (quote
-    (ob-ipython ob-sagemath darkroom yasnippet winum which-key vdiff use-package smartparens ripgrep rainbow-mode rainbow-delimiters projectile org-bullets neotree minimap key-chord imenu-list highlight-indent-guides evil doom-themes doom-modeline counsel company-ycmd company-irony avy autothemer)))
+    (evil-magit ob-ipython ob-sagemath darkroom yasnippet winum which-key vdiff use-package smartparens ripgrep rainbow-mode rainbow-delimiters projectile org-bullets neotree minimap key-chord imenu-list highlight-indent-guides evil doom-themes doom-modeline counsel company-ycmd company-irony avy autothemer)))
  '(yas-snippet-dirs (quote ("~/.emacs.d/snippets"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

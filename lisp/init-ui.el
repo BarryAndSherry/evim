@@ -1,7 +1,7 @@
 ;; UI config
 
-(setq initial-frame-alist '( (fullscreen . maximized)))
-(setq default-frame-alist '( (fullscreen . maximized)))
+;; (setq initial-frame-alist '( (fullscreen . maximized)))
+;; (setq default-frame-alist '( (fullscreen . maximized)))
 
 ;; (set-default-font "Source Han Sans HWSC 12")
 ;; (setq default-frame-alist '((font . "Source Han Sans HWSC 12")))
@@ -49,7 +49,7 @@
   (use-package doom-modeline
     :custom
     (doom-modeline-buffer-file-name-style 'truncate-with-project)
-    (doom-modeline-icon t)
+    (doom-modeline-icon nil)
     (doom-modeline-major-mode-icon nil)
     (doom-modeline-minor-modes nil)
     :hook
