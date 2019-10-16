@@ -52,6 +52,7 @@
 ;; set proxy for emacs
 ;; (setq url-proxy-services '(("http" . "127.0.0.1:1080")))
 ;; load config plugin
+
 (require 'init-elpa)
 (require 'init-shell)
 (require 'init-ivy)
@@ -64,6 +65,5 @@
 (require 'company-english-helper)
 (require 'darkroom)
 (require 'insert-translated-name)
-(require 'init-latex)
 (require 'init-evil)
 (require 'init-ui)
