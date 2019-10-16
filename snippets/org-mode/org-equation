@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name:org-equation 
+# key: \eq
+# --
+\$\$
+$0
+\$\$

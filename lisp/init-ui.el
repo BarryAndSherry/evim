@@ -43,7 +43,7 @@
   (vertical-bar   (doom-darken base5 0.4))
   ;; (doom-darken bg 0.4)
   :config
-  (load-theme 'doom-vibrant t)
+  (load-theme 'doom-one-light t)
   ;; (doom-themes-org-config)
   ;; Modeline
   (use-package doom-modeline
