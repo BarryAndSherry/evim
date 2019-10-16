@@ -3,8 +3,8 @@
 (setq initial-frame-alist '( (fullscreen . maximized)))
 (setq default-frame-alist '( (fullscreen . maximized)))
 
-(set-default-font "Source Han Sans HWSC 12")
-(setq default-frame-alist '((font . "Source Han Sans HWSC 12")))
+;; (set-default-font "Source Han Sans HWSC 12")
+;; (setq default-frame-alist '((font . "Source Han Sans HWSC 12")))
 
 
 (setq line-number-mode t)
