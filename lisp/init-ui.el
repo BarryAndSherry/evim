@@ -1,14 +1,14 @@
 ;; UI config
 
-(setq initial-frame-alist '( (fullscreen . maximized)))
-(setq default-frame-alist '( (fullscreen . maximized)))
+;; (setq initial-frame-alist '( (fullscreen . maximized)))
+;; (setq default-frame-alist '( (fullscreen . maximized)))
 
 (set-default-font "Source Han Sans HWSC 12")
 (setq default-frame-alist '((font . "Source Han Sans HWSC 12")))
 
 
 (setq line-number-mode t)
-(setq column-number-mode t)
+;;(setq column-number-mode t)
 (setq frame-title-format "Barry's EmVim")
 (menu-bar-mode 0)
 (tool-bar-mode 0)
@@ -49,7 +49,7 @@
   (use-package doom-modeline
     :custom
     (doom-modeline-buffer-file-name-style 'truncate-with-project)
-    (doom-modeline-icon t)
+    (doom-modeline-icon nil)
     (doom-modeline-major-mode-icon nil)
     (doom-modeline-minor-modes nil)
     :hook
@@ -61,6 +61,10 @@
     (doom-modeline-def-modeline 'main
       '(bar window-number  buffer-info  buffer-position parrot selection-info)
       '(misc-info persp-name lsp github debug minor-modes input-method major-mode process vcs checker))))
+
+(use-package rainbow-mode
+  :diminish
+  :hook (emacs-lisp-mode . rainbow-mode))
 
 ;; rainbow-delimiters
 (use-package rainbow-delimiters
@@ -74,11 +78,6 @@
   :defer 1
   :hook
   (after-init . global-hl-line-mode))
-
-
-(use-package rainbow-mode
-  :diminish
-  :hook (emacs-lisp-mode . rainbow-mode))
 
 (use-package highlight-indent-guides
   :defer t

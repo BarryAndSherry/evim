@@ -62,8 +62,12 @@
 (require 'init-projectile)
 (require 'init-cpp)
 (require 'init-orgmode)
+(require 'init-projectile)
+(require 'init-vdiff)
+(require 'init-ui)
 (require 'company-english-helper)
-(require 'darkroom)
+;; (require 'darkroom)
 (require 'insert-translated-name)
 (require 'init-evil)
-(require 'init-ui)
+
+
