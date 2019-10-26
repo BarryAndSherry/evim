@@ -3,11 +3,11 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Code begin;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; emacs startup time
-(add-hook 'emacs-startup-hook
-	  (lambda ()
-            (message "Emacs ready in %s with %d garbage collections."
-                (format "%.2f seconds"
-                    (float-time (time-subtract after-init-time before-init-time))) gcs-done)))
+;; (add-hook 'emacs-startup-hook
+;; 	  (lambda ()
+;;             (message "Emacs ready in %s with %d garbage collections."
+;;                 (format "%.2f seconds"
+;;                     (float-time (time-subtract after-init-time before-init-time))) gcs-done)))
 
 ;;; Temporarily reduce garbage collection during startup. Inspect `gcs-done'.
 (defun ambrevar/reset-gc-cons-threshold ()
@@ -67,6 +67,27 @@
 (require 'company-english-helper)
 (require 'darkroom)
 (require 'insert-translated-name)
+(require 'init-dashboard)
 (require 'init-evil)
 
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(doom-themes-enable-bold t)
+ '(doom-themes-enable-italic t)
+ '(imenu-list-auto-resize t)
+ '(imenu-list-focus-after-activation t)
+ '(package-selected-packages
+   (quote
+    (dashboard yasnippet winum which-key vdiff use-package smartparens ripgrep rainbow-mode rainbow-delimiters projectile pdf-tools org-bullets ob-sagemath ob-ipython neotree minimap key-chord imenu-list highlight-indent-guides evil doom-themes doom-modeline counsel company-ycmd company-irony cdlatex avy autothemer auctex)))
+ '(yas-snippet-dirs (quote ("~/.emacs.d/snippets"))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(imenu-list-entry-face-1 ((t (:foreground "white"))))
+ '(vertical-bar (doom-darken base5 0.4)))
