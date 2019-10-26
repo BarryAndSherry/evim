@@ -3,8 +3,16 @@
 ;; (setq initial-frame-alist '( (fullscreen . maximized)))
 ;; (setq default-frame-alist '( (fullscreen . maximized)))
 
-(set-default-font "Source Han Sans HWSC 12")
-(setq default-frame-alist '((font . "Source Han Sans HWSC 12")))
+
+
+(when (< (display-pixel-width) 1921) 
+  (set-default-font "ShureTechMono Nerd Font 12")
+  (setq default-frame-alist '((font . "ShureTechMono Nerd Font 12"))))
+(when (> (display-pixel-width) 1921) 
+  (set-default-font "ShureTechMono Nerd Font 14")
+  (setq default-frame-alist '((font . "ShureTechMono Nerd Font 14"))))
+
+
 
 
 (setq line-number-mode t)

@@ -7,8 +7,7 @@
 	  (lambda ()
             (message "Emacs ready in %s with %d garbage collections."
                 (format "%.2f seconds"
-                    (float-time
-                        (time-subtract after-init-time before-init-time))) gcs-done)))
+                    (float-time (time-subtract after-init-time before-init-time))) gcs-done)))
 
 ;;; Temporarily reduce garbage collection during startup. Inspect `gcs-done'.
 (defun ambrevar/reset-gc-cons-threshold ()
@@ -66,7 +65,7 @@
 (require 'init-vdiff)
 (require 'init-ui)
 (require 'company-english-helper)
-;; (require 'darkroom)
+(require 'darkroom)
 (require 'insert-translated-name)
 (require 'init-evil)
 
