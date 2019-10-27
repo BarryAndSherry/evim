@@ -5,7 +5,7 @@
 
 
 ;; TODO : I could not fix this  for setting font size acordding to the screen reslution
-;; (setq default-frame-alist '((font . "ShureTechMono Nerd Font 12")))
+(setq default-frame-alist '((font . "ShureTechMono Nerd Font 11")))
 
 (if (< (display-pixel-width) 1921) 
     (set-default-font "ShureTechMono Nerd Font 12")
