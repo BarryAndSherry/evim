@@ -4,12 +4,12 @@
 ;; (setq default-frame-alist '( (fullscreen . maximized)))
 
 
+;; TODO : I could not fix this  for setting font size acordding to the screen reslution
+;; (setq default-frame-alist '((font . "ShureTechMono Nerd Font 12")))
+
 (if (< (display-pixel-width) 1921) 
     (set-default-font "ShureTechMono Nerd Font 12")
   (set-default-font "ShureTechMono Nerd Font 14"))
-
-;; TODO : I could not fix this  for setting font size acordding to the screen reslution
-(setq default-frame-alist '((font . "ShureTechMono Nerd Font 12")))
 
 
 
