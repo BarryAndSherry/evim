@@ -20,32 +20,34 @@
   (define-key company-active-map (kbd "C-d") 'company-show-doc-buffer))
 
 ;; some config for c++ auto-complete
-(use-package ycmd
-  :defer 2)
+;; (use-package ycmd
+;;   :defer 2)
+;; 
+;; (add-hook 'c++-mode-hook 'ycmd-mode)
+;; (add-hook 'python-mode-hook 'ycmd-mode)
+;; (set-variable 'ycmd-server-command `("python3" , (file-truename "~/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd")))
+;; 
+;; (use-package company-ycmd
+;;   :defer 2
+;;   :init (company-ycmd-setup))
 
-(add-hook 'c++-mode-hook 'ycmd-mode)
-(add-hook 'python-mode-hook 'ycmd-mode)
-(set-variable 'ycmd-server-command `("python3" , (file-truename "~/.vim/plugged/YouCompleteMe/third_party/ycmd/ycmd")))
 
-(use-package company-ycmd
+(use-package company-irony
+  :ensure t
   :defer 2
-  :init (company-ycmd-setup))
+  :config
+  (require 'company)
+  (add-to-list 'company-backends 'company-irony))
 
 
-;; (use-package company-irony
-;;   :defer 2
-;;   :config
-;;   (require 'company)
-;;   (add-to-list 'company-backends 'company-irony))
-;; 
-;; 
-;; (use-package irony
-;;   :defer 2
-;;   :config
-;;   (add-hook 'c++-mode-hook 'irony-mode)
-;;   (add-hook 'c-mode-hook 'irony-mode)
-;;   (add-hook 'objc-mode-hook 'irony-mode)
-;;   (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options))
+(use-package irony
+  :ensure t
+  :defer 2
+  :config
+  (add-hook 'c++-mode-hook 'irony-mode)
+  (add-hook 'c-mode-hook 'irony-mode)
+  (add-hook 'objc-mode-hook 'irony-mode)
+  (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options))
 
 
 ;; some config for yasnippet

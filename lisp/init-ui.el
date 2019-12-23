@@ -4,12 +4,9 @@
 ;; (setq default-frame-alist '( (fullscreen . maximized)))
 
 
-;; TODO : I could not fix this  for setting font size acordding to the screen reslution
-(setq default-frame-alist '((font . "ShureTechMono Nerd Font 11")))
-
-(if (< (display-pixel-width) 1921) 
-    (set-default-font "ShureTechMono Nerd Font 12")
-  (set-default-font "ShureTechMono Nerd Font 14"))
+;; Setting font
+;;(setq default-frame-alist '((font . "ShureTechMono Nerd Font 11")))
+;;(set-default-font "ShureTechMono Nerd Font 12")
 
 
 
@@ -86,15 +83,15 @@
   :hook
   (after-init . global-hl-line-mode))
 
-(use-package highlight-indent-guides
-  :defer t
-  :diminish
-  :hook
-  ((prog-mode yaml-mode) . highlight-indent-guides-mode)
-  :custom
-  (highlight-indent-guides-auto-enabled t)
-  (highlight-indent-guides-responsive t)
-  (highlight-indent-guides-method 'character)) ; column
+;; (use-package highlight-indent-guides
+;; :defer t
+;; :diminish
+;; :hook
+;; ((prog-mode yaml-mode) . highlight-indent-guides-mode)
+;; :custom
+;; (highlight-indent-guides-auto-enabled t)
+;; (highlight-indent-guides-responsive t)
+;; (highlight-indent-guides-method 'character)) ; column
 
 (use-package all-the-icons
   :ensure nil
